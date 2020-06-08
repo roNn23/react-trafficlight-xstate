@@ -31,11 +31,7 @@ const machineConfig = {
 };
 
 const App = () => {
-  const machine = useMachine(machineConfig, {
-    actions: {
-      sideEffect: () => console.log("sideEffect")
-    }
-  });
+  const machine = useMachine(machineConfig);
 
   return (
     <div className="App">
